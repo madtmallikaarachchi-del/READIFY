@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="css/feedback.css">
+  <link rel="icon" href="images/favicon/favicon.png">
+</head>
+<body>
+
+
+  <header>
+    <h1 class="logo">READIFY</h1>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
+
+
+  <main>
+    <h1>Feedback</h1>
+
+    <section class="section">
+
+      <input type="text" id="fname" placeholder="Name">
+      <input type="email" id="femail" placeholder="Email">
+      <textarea id="fmsg" placeholder="Your message"></textarea>
+      <button onclick="submitFeedback()">Submit</button>
+      <p id="fbDone"></p>
+         
+
+      <div class="faq">
+        <h3 onclick="toggleFAQ()">What is Readify?</h3>
+        <p id="faq" class="hidden">Readify is a reading companion web app.</p>
+      </div>
+
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="newsletter">
+      <input id="newsEmail" type="email" placeholder="Email for newsletter">
+      <button onclick="saveEmail()">Subscribe</button>
+      <p>Reading is dreaming</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="js/feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Explorer</title>
+  <link rel="stylesheet" href="css/explorer.css">
+  <link rel="icon" href="images/favicon/favicon.png">
+</head>
+<body>
+
+
+  <header>
+    <h1 class="logo">READIFY</h1>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
+
+
+  <main>
+    <section class="section">
+      <h2>Book Explorer</h2>
+      <select id="genreFilter" onchange="searchBooks()">
+        <option value="All">All Genres</option>
+        <option value="Classic">Classic</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Dystopian">Dystopian</option>
+      </select>
+      <input id="search" type="text" placeholder="Search by title or author" onkeyup="searchBooks()">
+      <div id="bookList"></div>
+    </section>
+  </main>
+
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button onclick="closeModal()">Close</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="newsletter">
+      <input id="newsEmail" type="email" placeholder="Email for newsletter">
+      <button onclick="saveEmail()">Subscribe</button>
+      <p>Reading is dreaming</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="js/explorer.js"></script>
+</body>
+</html>

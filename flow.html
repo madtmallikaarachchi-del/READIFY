@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading Flow</title>
+  <link rel="stylesheet" href="css/flow.css">
+  <link rel="icon" href="images/favicon/favicon.png">
+</head>
+<body>
+
+
+  <header>
+    <h1 class="logo">READIFY</h1>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
+
+
+  <main>
+    <h1>Reading Flow</h1>
+    <p class="subtitle">Quiet focus. Cozy sound. Simple tracking..</p>
+    
+    <div class="cards">
+      <div class="card">
+        <h2>Cozy Sounds</h2>
+        <p>Play relaxing background sound</p>
+        <button onclick="playSound()">Play</button>
+        <button onclick="stopSound()">Stop</button>
+      </div>
+      
+      <div class="card">
+        <h2>Completed Books</h2>
+        <input id="completedTitle" placeholder="Book title">
+        <button onclick="addBook()">Add</button>
+        <button onclick="clearBooks()">Clear All</button>
+        <ul id="completedList"></ul>
+      </div>
+    </div>
+    
+    <audio id="sound" src="music/cozy.mp3" loop></audio>
+  </main>
+
+
+  <footer>
+    <div class="newsletter">
+      <input id="newsEmail" type="email" placeholder="Email for newsletter">
+      <button onclick="saveEmail()">Subscribe</button>
+      <p>Reading is dreaming</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="js/flow.js"></script>
+</body>
+</html>

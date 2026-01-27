@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Recommender</title>
+  <link rel="stylesheet" href="css/recommender.css">
+  <link rel="icon" href="images/favicon/favicon.png">
+</head>
+<body>
+
+
+  <header>
+    <h1 class="logo">READIFY</h1>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
+
+
+  <main>
+    <section class="section">
+      <h2>Book Recommender</h2>
+      
+      <label>Genre</label>
+      <select id="genre">
+        <option value="">Select genre</option>
+        <option value="Classic">Classic</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Dystopian">Dystopian</option>
+      </select>
+      
+      <label>Length</label>
+      <select id="length">
+        <option value="">Select length</option>
+        <option value="short">Short</option>
+        <option value="medium">Medium</option>
+        <option value="long">Long</option>
+      </select>
+      
+      <button onclick="randomPick()">Pick a Book</button>
+      <p id="result">No recommendation yet.</p>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="newsletter">
+      <input id="newsEmail" type="email" placeholder="Email for newsletter">
+      <button onclick="saveEmail()">Subscribe</button>
+      <p>Reading is dreaming</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="js/recommender.js"></script>
+</body>
+</html>

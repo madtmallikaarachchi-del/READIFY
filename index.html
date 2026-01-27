@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify - Home</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="images/favicon/favicon.png">
+</head>
+<body>
+
+ 
+  <header>
+    <h1 class="logo">READIFY</h1>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
+
+
+   
+  <section class="hero">
+    
+    <div class="quote">
+      <p id="quoteText">Welcome to Readify</p>
+      <p id="quoteAuthor"></p>
+    </div>
+    <div class="author-block">
+      <h3>Author of the Day</h3>
+
+      <img id="authorImg" alt="Author image"  src="images/authors/J_R_R_Tolkien.jpg">
+      <p id="authorDay"></p>
+    </div>
+
+  </section>
+
+
+  <footer>
+    <div class="newsletter">
+      <input id="newsEmail" type="email" placeholder="Email for newsletter">
+      <button onclick="saveEmail()">Subscribe</button>
+      <p>Reading is dreaming.</p>
+    </div>
+    
+
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

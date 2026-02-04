@@ -1,11 +1,11 @@
 
 const books = [
-  { title: "Hath Pana", author: " Kumaratunga Munidasa", genre: "Classic", image: "images/books/hathpana.jpg", synopsis: "A popular Sinhala folk story collection often read by children, rich in moral lessons and cultural values.", ratings: [[" Critic", 5]] },
-  { title: "Gamperaliya", author: "Martin Wickramasinghe", genre: "Classic", image: "images/books/gamperaliya.jpg", synopsis: "A classic Sinhala novel depicting the social transformation of a traditional Sri Lankan village.", ratings: [["Literary Critic", 5]] },
-  { title: "The Lord of the Rings", author: "J.R.R. Tolkien", genre: "Fantasy", image: "images/books//Rings.jpg", synopsis: "An epic quest to destroy the One Ring.", ratings: [["Critic C", 5]] },
-  { title: "The Chronicles of Narnia", author: "C.S. Lewis", genre: "Fantasy", image: "images/books/Narnia.jpg", synopsis: "Children discover a magical land through a wardrobe.", ratings: [["Critic D", 5]] },
-  { title: "1984", author: "George Orwell", genre: "Dystopian", image: "images/books/1984.jpg", synopsis: "A chilling vision of totalitarian surveillance and control.", ratings: [["Critic E", 5]] },
-  { title: "Brave New World", author: "Aldous Huxley", genre: "Dystopian", image: "images/books/Brave.jpg", synopsis: "A futuristic society shaped by technology.", ratings: [["Critic F", 4]] }
+  { title: "Hath Pana", author: " Kumaratunga Munidasa", genre: "Classic", image: "images/books/hathpana.jpg", synopsis: "A popular Sinhala folk story collection often read by children, rich in moral lessons and cultural values.", ratings: [["Abiru", 5]] },
+  { title: "Gamperaliya", author: "Martin Wickramasinghe", genre: "Classic", image: "images/books/gamperaliya.jpg", synopsis: "A classic Sinhala novel depicting the social transformation of a traditional Sri Lankan village.", ratings: [["Ravishka", 5]] },
+  { title: "The Lord of the Rings", author: "J.R.R. Tolkien", genre: "Fantasy", image: "images/books//Rings.jpg", synopsis: "An epic quest to destroy the One Ring.", ratings: [["Jhon", 5]] },
+  { title: "The Chronicles of Narnia", author: "C.S. Lewis", genre: "Fantasy", image: "images/books/Narnia.jpg", synopsis: "Children discover a magical land through a wardrobe.", ratings: [["Thomas", 5]] },
+  { title: "1984", author: "George Orwell", genre: "Dystopian", image: "images/books/1984.jpg", synopsis: "A chilling vision of totalitarian surveillance and control.", ratings: [["William", 5]] },
+  { title: "Brave New World", author: "Aldous Huxley", genre: "Dystopian", image: "images/books/Brave.jpg", synopsis: "A futuristic society shaped by technology.", ratings: [["Leonardo", 4]] }
 ];
 
 
@@ -103,3 +103,4 @@ function saveEmail() {
 
 
 searchBooks();
+
